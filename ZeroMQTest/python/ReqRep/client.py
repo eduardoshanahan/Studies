@@ -1,4 +1,4 @@
-__author__ = 'eduardoshanahan'
+__author__ = 'Eduardo Shanahan'
 
 import zmq
 
