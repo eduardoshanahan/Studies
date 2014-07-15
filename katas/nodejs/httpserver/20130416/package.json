@@ -1,0 +1,15 @@
+{
+    "name": "HTTPServerKata",
+    "version": "0.0.3",
+    "author": "Eduardo Shanahan",
+    "devDependencies": {
+        "mocha": "*",
+        "nodemon": "*",
+        "should": "*"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha $(find test -name '*.js') -w",
+        "watch": "nodemon app.js"
+    }
+}

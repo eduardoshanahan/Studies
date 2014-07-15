@@ -1,0 +1,16 @@
+**/.idea/
+*~
+**/node_modules
+**/npm-debug.log
+**/python_modules
+*.pyc
+**/.vagrant
+**/.DS_Store
+**/deploy
+**/synchResources
+**/nbproject/private
+**/dist
+**/build
+**/nohup.out
+**/out
+**/activitylogs

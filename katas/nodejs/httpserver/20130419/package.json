@@ -1,0 +1,14 @@
+{
+    "name":"httpServerGetStatus",
+    "version":"2013.04.19",
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha $(find test -name '*.js') -w",
+        "watch": "nodemon app.js"
+        },
+    "devDependencies": {
+        "mocha":"*",
+        "nodemon":"*",
+        "should":"*"
+    }
+}
