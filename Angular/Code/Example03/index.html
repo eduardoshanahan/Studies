@@ -1,0 +1,29 @@
+<html ng-app>
+  <head>
+    <title>Shopping Cart</title>
+  </head>
+  <body ng-controller='CartController'>
+    <h1>Order</h1>
+    <div ng-repeat='item in items'>
+      <span>{{item.title}}</span>
+      <input ng-model='item.quantity'>
+      <span>{{item.price | currency}}</span>
+      <span>{{item.price * item.quantty | currency}}</span>
+      <button ng-click="remove($index)">Remove</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
+    <script>
+      function CartController($scope){
+        $scope.items = [
+          {title: 'monkeys', quantity: 3, price: 2.20},
+          {title: 'bananas', quantity: 6, price: .50}
+        ];
+
+        function remove(index){
+          $scope.items.splice(index,1);
+        }
+      };
+    </script>
+  </body>
+</html>

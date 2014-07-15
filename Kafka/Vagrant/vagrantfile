@@ -12,6 +12,6 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision :fabric do |fabric|
         fabric.fabfile_path = "../fabfile.py"
-        fabric.tasks = ["ubuntu_update"]
+        fabric.tasks = ["ubuntu_update", "install_openjdk"]
     end
 end

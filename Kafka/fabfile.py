@@ -78,3 +78,14 @@ def install_docker():
     sudo('apt-get install docker.io -y')
     sudo('ln -sf /usr/bin/docker.io /usr/local/bin/docker')
     sudo("sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io")
+
+
+@task
+def install_openjdk():
+    sudo('apt-get install -y openjdk-7-jdk')
+
+
+@task
+def install_kafka():
+    sudo('wget http://www.whoishostingthis.com/mirrors/apache/kafka/0.8.1/kafka_2.9.2-0.8.1.1.tgz')
+    
